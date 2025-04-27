@@ -1,0 +1,369 @@
+/*  import google fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    color: #fff;
+    position: relative;
+}
+
+#showcase {
+    height: 100vh;
+    /* background-image: url(./img/bg.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overlay {
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.container {
+    display: flex;
+}
+
+nav {
+    padding: 10px;
+    position: fixed;
+}
+
+#nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.logo {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.navbar {
+    margin-top: 3rem;
+}
+
+ul li {
+    transform: rotate(-90deg);
+    display: block;
+    margin-top: 50px;
+    padding-top: 20px;
+    height: 60px;
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+a {
+    color: #fff;
+}
+
+.icons {
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.icons li {
+    transform: none;
+    margin: 10px auto;
+    padding: 0;
+    height: 35px;
+    width: 40px;
+}
+
+.icons li i {
+    font-size: 16px;
+    padding: 4px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid rgb(82, 81, 81);
+}
+
+i:hover {
+    background: gray;
+    transition: all 0.5s;
+}
+
+.line {
+    border: 1px solid gray;
+    height: 100vh;
+    margin-left: 10px;
+}
+
+.main {
+    padding: 20px 40px;
+    margin-top: 20px;
+}
+
+.main h4 {
+    margin-top: 3rem;
+    text-transform: uppercase;
+    color: gray;
+}
+
+.main h1 {
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 4rem;
+}
+
+.main span {
+    color: rgb(116, 17, 173);
+}
+
+.main p {
+    font-size: 12px;
+    color: gray;
+    text-transform: capitalize;
+}
+
+.buttons {
+    margin-top: 2.5rem;
+}
+
+.buttons button {
+    padding: 8px 14px;
+    background: rgb(116, 17, 173);
+    color: #fff;
+    text-transform: uppercase;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.btn2 {
+    background: rgb(61, 61, 61) !important;
+}
+
+button:hover {
+    background: rgba(56, 15, 88, 0.5);
+    transition: all 0.5s;
+}
+
+.btn2:hover {
+    background: rgba(76, 75, 77, 0.5) !important;
+}
+
+.projects {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.projects span {
+    color: #fff;
+    font-size: 20px;
+}
+
+.projects td {
+    font-size: 12px;
+    padding-right: 2rem;
+    color: gray;
+}
+
+.sec {
+    background-color: rgba(0, 0, 0, 0.8);
+    display: block;
+    min-height: 100vh;
+    min-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.detect {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+}
+
+
+/* LEFT SIDE */
+
+.shortpara {
+    /* background-color: bisque; */
+    width: 45rem;
+    margin-left: 3rem;
+    margin-top: 14rem;
+    font-size: 1.8rem;
+    color: gray;
+    text-transform: capitalize;
+}
+
+
+/* RIGHT SIDE OF SECOND ITEM */
+
+.right {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+    width: 37rem;
+}
+
+.cam-outer {
+    height: 22rem;
+    width: 20rem;
+    /* background-color: blueviolet; */
+    position: relative;
+}
+
+#webcam-container {
+    position: absolute;
+}
+
+
+/* GLASS */
+
+.glass {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    --webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    height: 85vh;
+    width: 85%;
+    margin-top: 3rem;
+    position: relative;
+}
+
+.outer {
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+
+
+/* THIRD CONTENT */
+
+.glass2 {
+    display: flex;
+    /* justify-content: space-between; */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    --webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    height: 85vh;
+    width: 85%;
+    position: absolute;
+    top: 4rem;
+    left: 7rem;
+}
+
+.pie {
+    /* background-color: green; */
+    height: 32rem;
+    width: 30rem;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prediction-section {
+    /* background-color: blue; */
+    height: 37rem;
+    width: 47rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+
+/* pie chart */
+
+.outer_pie {
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+    /* border: 1px solid orangered; */
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+}
+
+.inner_pie {
+    height: 260px;
+    width: 260px;
+    /* border: 1px solid orangered; */
+    box-shadow: 4px 4px 6px -1px rgba(0, 0, 0, 0.15), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px rgba(255, 255, 255, 1), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#number {
+    font-weight: 600;
+    color: #fff;
+    font-size: 3rem;
+}
+
+circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 23px;
+    /* stroke-dasharray: 920;
+    stroke-dashoffset: 100; */
+    stroke-dasharray: 920;
+    stroke-dashoffset: 920;
+    animation: anim 2s linear forwards;
+}
+
+@keyframes anim {
+    100% {
+        stroke-dashoffset: 73.6;
+    }
+}
+
+svg {
+    position: absolute;
+    top: 11.7rem;
+    left: 7.7rem;
+}
+
+
+/* RIGHT CONTENT */
+
+#highest-probability {
+    /* background-color: blue; */
+    height: 3.5rem;
+    width: 40rem;
+}
+
+#predicted {
+    /* background-color: violet; */
+    height: 28.5rem;
+    width: 44rem;
+    font-size: 1.5rem;
+    overflow: auto;
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    padding: 10px;
+}

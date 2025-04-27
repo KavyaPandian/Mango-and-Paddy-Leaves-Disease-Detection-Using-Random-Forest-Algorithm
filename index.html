@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paddy and Mango Leaf Disease detection</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="pie.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+</head>
+
+<body>
+    <header id="showcase">
+        <div class="overlay">
+            <div class="container">
+                <nav id="nav">
+                    <div class="logo">
+                        <img src="../assets/images.png" alt="">
+                    </div>
+                    <ul class="navbar">
+                        <li><a href="#section1">HOME</a></li>
+                        <li><a href="#section2">PREDICTION</a></li>
+                        <li><a href="#section3">RESULT</a></li>
+                    </ul>
+                    <ul class="icons">
+                        <li><i class="fab fa-facebook"></i></li>
+                        <li><i class="fab fa-youtube"></i></li>
+                        <li><i class="fab fa-instagram"></i></li>
+                    </ul>
+                </nav>
+
+                <div class="line"></div>
+
+                <!-- main secction -->
+                <section class="main" id="section1">
+                    <h4>SRM IST RAMAPURAM</h4>
+                    <h1>PLANT DISEASE DETECTION <br>USING <span>Image Processing</span></h1>
+                    <p>
+                        Empowering Agriculture Through Advanced Leaf Disease Detection Technology <br> Harnessing AI to Safeguard Crops: Detecting Plant Leaf Diseases with Precision.
+                    </p>
+                    <div class="buttons">
+                        <button onclick="init()"><a href="#section2">Get started</a></button>
+                        <button class="btn2">Join now</button>
+                    </div>
+
+                    <div class="projects">
+                        <table>
+                            <tr>
+                                <td><span>300+</span></td>
+                                <td><span>150+</span></td>
+                                <td><span>Mango, Paddy</span></td>
+                            </tr>
+                            <tr>
+                                <td>Dataset</td>
+                                <td>Disease</td>
+                                <td>Detectable</td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </header>
+    <!-- SECOND CONTENT -->
+    <section class="sec" id="section2">
+        <div class="detect">
+            <div class="glass">
+                <div class="left">
+                    <p class="shortpara">
+                        <span>Real-Time Detection of an image of a plant for automated disease detection using advanced image</span> Processing techniques for precise diagnosis and treatment recommendations.
+                    </p>
+                </div>
+                <div class="right">
+                    <!-- <div class="form-input">
+                        <div class="preview">
+                            <img src="" alt="" id="img_preview">
+                        </div>
+                        <label for="choose_btn">Upload Here</label>
+                        <input type="file" id="choose_btn" accept="image/*" onchange="showPreview(event)">
+                    </div> -->
+                    <div class="cam-outer">
+                        <div id="webcam-container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="section3">
+        <div class="outer">
+            <div class="glass2">
+                <div class="pie content1">
+                    <div class="outer_pie">
+                        <div class="inner_pie">
+                            <div id="number">0%</div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="500px" height="500px">
+                        <defs>
+                           <linearGradient id="GradientColor">
+                              <stop offset="0%" stop-color="#e91e63" />
+                              <stop offset="100%" stop-color="#673ab7" />
+                           </linearGradient>
+                        </defs>
+                        <circle cx="150" cy="150" r="140" stroke-linecap="round" />
+                    </svg>
+
+                </div>
+
+                <div class="prediction-section content1">
+                    <h2>Prediction Result</h2>
+                    <div id="highest-probability"></div>
+                    <div id="predicted"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Importing js -->
+    <script src="script.js"></script>
+</body>
+
+</html>
